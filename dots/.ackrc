@@ -1,0 +1,9 @@
+--type-set
+coffee=.coffee
+--type-set
+hjs=.hjs
+--sort-files
+--smart-case
+--color
+--after-context=2
+--before-context=2
