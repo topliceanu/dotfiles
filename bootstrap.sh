@@ -3,5 +3,5 @@
 # times you execute it it will produce the same output.
 
 
-# 1. Fetch the latest master from dotfiles2
+echo 'Fetch the latest master from dotfiles2'
 git pull origin master
