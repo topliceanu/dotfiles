@@ -22,11 +22,12 @@ syntax on
 
 " Change leader to a comma because the backslash is too far away
 " That means all \x commands turn into ,x
-" The mapleader has to be set before vundle starts loading all 
+" The mapleader has to be set before vundle starts loading all
 " the plugins.
 let mapleader=","
 
 " ==================== Vundle =======================
+
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -50,6 +51,7 @@ Bundle "scrooloose/syntastic.git"
 filetype plugin indent on 
 
 " ================ Mappings =========================
+
 map <F2> :NERDTreeToggle %:p:h<CR>
 
 " ================ Turn Off Swap Files ==============
@@ -95,20 +97,32 @@ set foldnestmax=3       "deepest fold is 3 levels
 set nofoldenable        "dont fold by default
 
 " ==================== GVim GUI =====================
+
 set guioptions-=T       "remove toolbar
 set guioptions-=m
 set guioptions-=r
 set guioptions-=L       "remove scrollbar
 set colorcolumn=80      "highlight the 80th character column
 set cursorline          "highlight line on cursor
+
+" =================== Search ========================
+
+set ignorecase          "case-insensitive search
+set smartcase
 set hlsearch            "hightlight search results
+set incsearch           "continuously refine search
 
 " ====================== Colors =====================
+
 colorscheme wombat
 
-"========= Highlight trailing white spaces ==========
+"========= Trailing white spaces ==========
+
+" Highlight trailing whitespace.
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
+" Automatically remove trainling white space on save.
+autocmd BufWritePre * :%s/\s\+$//e
 
 " ================ Completion =======================
 
@@ -116,16 +130,21 @@ set wildmode=list:longest
 set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
 set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
 set wildignore+=*vim/backups*
-set wildignore+=*sass-cache*
-set wildignore+=*DS_Store*
-set wildignore+=vendor/rails/**
-set wildignore+=vendor/cache/**
-set wildignore+=*.gem
 set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
 
 " ================ Scrolling ========================
-
 set sidescrolloff=15
 set sidescroll=1
+
+" =================== Tabs ==========================
+
+" Add tab navigation shortcuts
+" CTRL+left, CTRL+right switches between tabs.
+" ALT+left, ALT+right moves tabs to left/right.
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
+nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . tabpagenr()<CR>
+"
