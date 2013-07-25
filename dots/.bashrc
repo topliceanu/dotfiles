@@ -130,4 +130,5 @@ function lambda_prompt {
 export PS1='\u@\h \w $(parse_git_branch)$(lambda_prompt) '
 
 # Local Environment Variables
-export EDITOR='vi'
+export EDITOR="vi"
+export GUI_EDITOR="gvim"
