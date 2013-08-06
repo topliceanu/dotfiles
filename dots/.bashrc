@@ -125,9 +125,9 @@ function parse_git_branch {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[\1$(parse_git_dirty)]/"
 }
 function lambda_prompt {
-    echo " λ"
+    echo "λ"
 }
-export PS1='\u@\h \w $(parse_git_branch)$(lambda_prompt) '
+export PS1='\u@\h \w $(parse_git_branch)\n$(lambda_prompt) '
 
 # Local Environment Variables
 export EDITOR="vi"
