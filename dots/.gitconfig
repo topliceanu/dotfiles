@@ -16,6 +16,7 @@
 	dump = cat-file -p
 	prb = pull --rebase
 	pr = diff master..HEAD
+	today = log --since=midnight --author=alexandru.topliceanu@gmail.com --oneline 
 [core]
 	autocrlf = input
 	safecrlf = true
