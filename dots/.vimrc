@@ -48,7 +48,7 @@ Bundle "scrooloose/nerdtree.git"
 " Syntax highlight.
 Bundle "scrooloose/syntastic.git"
 
-filetype plugin indent on 
+filetype plugin indent on
 
 " ================ Mappings =========================
 
@@ -147,4 +147,8 @@ nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
 nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . tabpagenr()<CR>
-"
+
+" ================= Ctrlp ===========================
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]node_modules$',
+  \ }
