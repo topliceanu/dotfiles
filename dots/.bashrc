@@ -132,3 +132,12 @@ export PS1='\u@\h \w $(parse_git_branch)\n$(lambda_prompt) '
 # Local Environment Variables
 export EDITOR="vi"
 export GUI_EDITOR="gvim"
+
+# The next line updates PATH for the Google Cloud SDK.
+source /home/alexandru/learn/google/alexandru/google-cloud-sdk/path.bash.inc
+
+# The next line enables bash completion for gcloud.
+source /home/alexandru/learn/google/alexandru/google-cloud-sdk/completion.bash.inc
+
+# Make sure the keyring daemon is running.
+eval `gnome-keyring-daemon --start`
