@@ -150,3 +150,8 @@ nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . tabpagenr()<CR>
 
 " Setup the line endings for the unix operating system.
 set ff=unix
+
+" ================= Ctrlp ===========================
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]node_modules$',
+  \ }
