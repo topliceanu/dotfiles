@@ -7,5 +7,5 @@ Install
 -------
 
 ````bash
-source ./boostrap.sh
+source ./install.sh
 ````

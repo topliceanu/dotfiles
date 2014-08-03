@@ -48,6 +48,9 @@ Bundle "scrooloose/nerdtree.git"
 " Syntax highlight.
 Bundle "scrooloose/syntastic.git"
 
+" Automatic Tab Completion.
+Bundle "ervandew/supertab"
+
 filetype plugin indent on
 
 " ================ Mappings =========================
@@ -155,3 +158,6 @@ set ff=unix
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]node_modules$',
   \ }
+
+" ================= NERDTree ========================
+let NERDTreeIgnore = ['\.pyc$']
