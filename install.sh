@@ -30,6 +30,7 @@ cd ..
 echo 'Add wombat color scheme ~/.vim/colors/wombat.vim'
 mkdir -p ~/.vim/colors
 cp ./vim/colors/wombat.vim ~/.vim/colors/wombat.vim
+cp ./vim/colors/wombat256mod.vim ~/.vim/colors/wombat256mod.vim
 
 echo 'Install Vundle for VIM'
 if [ ! -d ~/.vim/bundle/vundle ]; then

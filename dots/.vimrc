@@ -118,7 +118,11 @@ set incsearch           "continuously refine search
 " ====================== Colors =====================
 
 set t_Co=256 " Set 256 color terminal.
-colorscheme wombat
+if has('gui_running')
+    colorscheme wombat
+else
+    colorscheme wombat256mod
+endif
 
 "========= Trailing white spaces ==========
 
