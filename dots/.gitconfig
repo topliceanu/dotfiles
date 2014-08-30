@@ -1,31 +1,31 @@
 [user]
-    name = alexandru topliceanu
-    email = alexandru.topliceanu@gmail.com
+	name = alexandru topliceanu
+	email = alexandru.topliceanu@gmail.com
 [alias]
-    co = checkout
-    ci = commit
-    st = status
-    br = branch
-    df = diff
-    dfc = diff --cached
-    pa = add --patch
-    rlog = reflog # useful for lost SHA's
-    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-    type = cat-file -t
-    dump = cat-file -p
-    prb = pull --rebase
-    pr = diff master..HEAD
-    today = log --since=midnight --author=alexandru.topliceanu@gmail.com --oneline
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	df = diff
+	dfc = diff --cached
+	pa = add --patch
+	rlog = reflog # useful for lost SHA's
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	type = cat-file -t
+	dump = cat-file -p
+	prb = pull --rebase
+	pr = diff master..HEAD
+	today = log --since=midnight --author=alexandru.topliceanu@gmail.com --oneline 
 [core]
-    autocrlf = input
-    safecrlf = true
+	autocrlf = input
+	safecrlf = true
 [apply]
-    # Detect whitespace errors when applying a patch
-    whitespace = fix
+	# Detect whitespace errors when applying a patch
+	whitespace = fix
 [color]
-    # Use colors in Git commands that are capable of colored output when outputting to the terminal
-    ui = auto
+	# Use colors in Git commands that are capable of colored output when outputting to the terminal
+	ui = auto
 [merge]
-    # Include summaries of merged commits in newly created merge commit messages
-    log = true
+	# Include summaries of merged commits in newly created merge commit messages
+	log = true

@@ -135,12 +135,3 @@ export GUI_EDITOR="gvim"
 
 # Make sure the keyring daemon is running.
 eval `gnome-keyring-daemon --start`
-
-# Setup dircolors with solarized.
-export TERM=xterm-256color
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-fi
-
-# Correctly setup tmux colors.
-alias tmux="TERM=screen-256color-bce tmux"
