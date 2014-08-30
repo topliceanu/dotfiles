@@ -117,6 +117,7 @@ set incsearch           "continuously refine search
 
 " ====================== Colors =====================
 
+set t_Co=256 " Set 256 color terminal.
 colorscheme wombat
 
 "========= Trailing white spaces ==========

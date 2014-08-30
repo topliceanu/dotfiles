@@ -130,7 +130,8 @@ function lambda_prompt {
 export PS1='\u@\h \w $(parse_git_branch)\n$(lambda_prompt) '
 
 # Local Environment Variables
-export EDITOR="vi"
+export TERM="xterm-256color" # default terminal
+export EDITOR="vim"
 export GUI_EDITOR="gvim"
 
 # Make sure the keyring daemon is running.
