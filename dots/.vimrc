@@ -53,6 +53,9 @@ Bundle "ervandew/supertab"
 
 filetype plugin indent on
 
+" Solarized Theme.
+Bundle "altercation/vim-colors-solarized"
+
 " ================ Mappings =========================
 
 map <F2> :NERDTreeToggle %:p:h<CR>
@@ -117,7 +120,10 @@ set incsearch           "continuously refine search
 
 " ====================== Colors =====================
 
-colorscheme wombat
+"colorscheme wombat
+set t_Co=256
+set background=dark
+colorscheme solarized
 
 "========= Trailing white spaces ==========
 
