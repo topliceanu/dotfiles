@@ -5,6 +5,7 @@
 	co = checkout
 	ci = commit
 	st = status
+    sb = status -sb
 	br = branch
 	df = diff
 	dfc = diff --cached
@@ -16,7 +17,7 @@
 	dump = cat-file -p
 	prb = pull --rebase
 	pr = diff master..HEAD
-	today = log --since=midnight --author=alexandru.topliceanu@gmail.com --oneline 
+	today = log --since=midnight --author=alexandru.topliceanu@gmail.com --oneline
 [core]
 	autocrlf = input
 	safecrlf = true
