@@ -133,6 +133,3 @@ export PS1='\u@\h \w $(parse_git_branch)\n$(lambda_prompt) '
 export TERM="xterm-256color" # default terminal
 export EDITOR="vim"
 export GUI_EDITOR="gvim"
-
-# Make sure the keyring daemon is running.
-eval `gnome-keyring-daemon --start`
