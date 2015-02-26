@@ -40,6 +40,9 @@ Bundle 'gmarik/vundle'
 " Language support.
 Bundle "pangloss/vim-javascript"
 Bundle "kchmck/vim-coffee-script"
+Bundle "groenewege/vim-less"
+Bundle "mxw/vim-jsx"
+Bundle "mattn/emmet-vim.git"
 
 " Improve navigation.
 Bundle 'kien/ctrlp.vim'
