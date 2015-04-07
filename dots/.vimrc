@@ -54,6 +54,9 @@ Bundle "scrooloose/syntastic.git"
 " Automatic Tab Completion.
 Bundle "ervandew/supertab"
 
+" Sexy Status Bar
+Bundle 'bling/vim-airline'
+
 filetype plugin indent on
 
 " ================ Mappings =========================
