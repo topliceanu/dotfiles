@@ -172,3 +172,6 @@ let g:ctrlp_custom_ignore = {
 
 " ================= NERDTree ========================
 let NERDTreeIgnore = ['\.pyc$']
+
+" ============= Airline Status Bar ==================
+set laststatus=2
