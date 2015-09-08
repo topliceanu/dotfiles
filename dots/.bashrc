@@ -136,3 +136,4 @@ export GUI_EDITOR="gvim"
 
 # Make sure the keyring daemon is running.
 eval `gnome-keyring-daemon --start`
+export PATH="/opt/cabal/1.22/bin:/opt/ghc/7.10.2/bin:$PATH"
