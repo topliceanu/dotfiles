@@ -4,6 +4,11 @@
 # This files is idempotent and unimodal: no matter how many
 # times you execute it it will produce the same output.
 
+echo 'Fetch packages needed for development'
+sudo apt-get install gvim-gnome
+sudo apt-get install tmux
+sudo apt-get install ack-grep
+
 echo 'Fetch the latest master from dotfiles2'
 git pull origin master
 
