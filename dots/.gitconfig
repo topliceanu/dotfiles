@@ -21,6 +21,7 @@
 [core]
     autocrlf = input
     safecrlf = true
+	editor = /usr/bin/vim
 [apply]
     # Detect whitespace errors when applying a patch
     whitespace = fix

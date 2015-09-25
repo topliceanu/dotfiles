@@ -11,6 +11,7 @@ set showcmd                     "Show incomplete cmds down the bottom
 set showmode                    "Show current mode down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set autoread                    "Reload files changed outside vim
+set clipboard=unnamed           "Allow copy from vim to OSX clipboard.
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.

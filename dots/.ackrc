@@ -4,6 +4,8 @@ coffee=.coffee
 hjs=.hjs
 --type-set
 hs=.hs
+--type-set
+rb=.rb
 --sort-files
 --smart-case
 --color
