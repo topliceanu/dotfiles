@@ -31,3 +31,5 @@
 [merge]
     # Include summaries of merged commits in newly created merge commit messages
     log = true
+[url "git@github.com:"]
+    insteadOf = https://github.com/
