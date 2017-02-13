@@ -44,6 +44,10 @@ Bundle "kchmck/vim-coffee-script"
 Bundle "groenewege/vim-less"
 Bundle "mxw/vim-jsx"
 Bundle "mattn/emmet-vim.git"
+Bundle "rodjek/vim-puppet.git"
+Bundle "fatih/vim-go"
+Bundle "leafgarland/typescript-vim"
+Bundle "rust-lang/rust.vim"
 
 " Improve navigation.
 Bundle 'kien/ctrlp.vim'
