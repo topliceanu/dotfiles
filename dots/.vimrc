@@ -66,7 +66,7 @@ filetype plugin indent on
 
 " ================ Mappings =========================
 
-map <F2> :NERDTreeToggle %:p:h<CR>
+map <C-n> :NERDTreeToggle %:p:h<CR>
 
 " ================ Turn Off Swap Files ==============
 
