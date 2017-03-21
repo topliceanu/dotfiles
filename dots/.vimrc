@@ -27,6 +27,9 @@ syntax on
 " the plugins.
 let mapleader=","
 
+" Remove status bar
+set laststatus=0
+
 " ==================== Vundle =======================
 
 filetype off
@@ -48,6 +51,7 @@ Bundle "rodjek/vim-puppet.git"
 Bundle "fatih/vim-go"
 Bundle "leafgarland/typescript-vim"
 Bundle "rust-lang/rust.vim"
+Bundle "lambdatoast/elm.vim"
 
 " Improve navigation.
 Bundle 'kien/ctrlp.vim'
@@ -55,9 +59,6 @@ Bundle "scrooloose/nerdtree.git"
 
 " Syntax highlight.
 Bundle "scrooloose/syntastic.git"
-
-" Automatic Tab Completion.
-Bundle "ervandew/supertab"
 
 filetype plugin indent on
 
