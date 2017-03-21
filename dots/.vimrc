@@ -174,3 +174,6 @@ let g:ctrlp_custom_ignore = {
 
 " ================= NERDTree ========================
 let NERDTreeIgnore = ['\.pyc$']
+
+" ================= vim-go ========================                             
+179 let g:go_fmt_autosave = 0 
