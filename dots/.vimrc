@@ -59,9 +59,6 @@ Bundle "scrooloose/syntastic.git"
 " Automatic Tab Completion.
 Bundle "ervandew/supertab"
 
-" Sexy Status Bar
-Bundle 'bling/vim-airline'
-
 filetype plugin indent on
 
 " ================ Mappings =========================
@@ -177,6 +174,3 @@ let g:ctrlp_custom_ignore = {
 
 " ================= NERDTree ========================
 let NERDTreeIgnore = ['\.pyc$']
-
-" ============= Airline Status Bar ==================
-set laststatus=2
