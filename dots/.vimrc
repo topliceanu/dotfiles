@@ -28,38 +28,32 @@ syntax on
 let mapleader=","
 
 " Remove status bar
-set laststatus=0
+set laststatus=2
 
 " ==================== Vundle =======================
 
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
 " let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
-" =============== Vundle Bundles ====================
+" =============== Vundle Plugins ====================
 
 " Language support.
-Bundle "pangloss/vim-javascript"
-Bundle "kchmck/vim-coffee-script"
-Bundle "groenewege/vim-less"
-Bundle "mxw/vim-jsx"
-Bundle "mattn/emmet-vim.git"
-Bundle "rodjek/vim-puppet.git"
-Bundle "fatih/vim-go"
-Bundle "leafgarland/typescript-vim"
-Bundle "rust-lang/rust.vim"
-Bundle "lambdatoast/elm.vim"
+Plugin 'pangloss/vim-javascript'
+Plugin 'fatih/vim-go'
 
 " Improve navigation.
-Bundle 'kien/ctrlp.vim'
-Bundle "scrooloose/nerdtree.git"
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree.git'
 
 " Syntax highlight.
-Bundle "scrooloose/syntastic.git"
+Plugin 'scrooloose/syntastic.git'
 
+" All of your Plugins must be added before the following line
+call vundle#end()
 filetype plugin indent on
 
 " ================ Mappings =========================
@@ -175,6 +169,3 @@ let g:ctrlp_custom_ignore = {
 
 " ================= NERDTree ========================
 let NERDTreeIgnore = ['\.pyc$']
-
-" ================= vim-go ========================                             
-179 let g:go_fmt_autosave = 0 
