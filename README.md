@@ -1,14 +1,14 @@
-dotfiles2
+dotfiles
 =========
 
-a new structure of my own dotfiles, with a focus on automation
+Dots
 
 Install
 -------
 
 ````bash
 sudo apt-get install gvim-gtk
-sudo apt-get install git-core
+sudo apt-get install git
 git clone https://github.com/topliceanu/dotfiles2
 cd dotfiles2
 source ./install.sh
