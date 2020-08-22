@@ -28,7 +28,7 @@ syntax on
 let mapleader=","
 
 " Remove status bar
-set laststatus=0
+set laststatus=2
 
 " ==================== Vundle =======================
 
@@ -42,16 +42,8 @@ Bundle 'gmarik/vundle'
 " =============== Vundle Bundles ====================
 
 " Language support.
-Bundle "pangloss/vim-javascript"
-Bundle "kchmck/vim-coffee-script"
-Bundle "groenewege/vim-less"
-Bundle "mxw/vim-jsx"
-Bundle "mattn/emmet-vim.git"
-Bundle "rodjek/vim-puppet.git"
-Bundle "fatih/vim-go"
-Bundle "leafgarland/typescript-vim"
-Bundle "rust-lang/rust.vim"
-Bundle "lambdatoast/elm.vim"
+"Bundle "pangloss/vim-javascript"
+"Bundle "fatih/vim-go"
 
 " Improve navigation.
 Bundle 'kien/ctrlp.vim'
@@ -116,6 +108,7 @@ set guioptions-=r
 set guioptions-=L       "remove scrollbar
 set colorcolumn=80      "highlight the 80th character column
 set cursorline          "highlight line on cursor
+"set cursorcolumn        "highlight column on cursor
 
 " =================== Search ========================
 
@@ -123,15 +116,6 @@ set ignorecase          "case-insensitive search
 set smartcase
 set hlsearch            "hightlight search results
 set incsearch           "continuously refine search
-
-" ====================== Colors =====================
-
-set t_Co=256 " Set 256 color terminal.
-if has('gui_running')
-    colorscheme wombat
-else
-    colorscheme wombat256mod
-endif
 
 "========= Trailing white spaces ==========
 
@@ -175,6 +159,3 @@ let g:ctrlp_custom_ignore = {
 
 " ================= NERDTree ========================
 let NERDTreeIgnore = ['\.pyc$']
-
-" ================= vim-go ========================                             
-179 let g:go_fmt_autosave = 0 

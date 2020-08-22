@@ -33,6 +33,3 @@
     log = true
 [url "git@github.com:"]
     insteadOf = https://github.com/
-[commit]
-    gpgsign = true
-
